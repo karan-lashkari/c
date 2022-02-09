@@ -6,7 +6,7 @@ int main()
     char a;
     float b,c,d;
 
-    printf("What You Want to do:-\n(1)Addition\t\t(2)Substraction\n(3)Multiplication\t(4)Division\n(5)Square\t\t(6)Square Root\n");
+    printf("Choose Operation:-\n(1)Addition\t\t(2)Substraction\n(3)Multiplication\t(4)Division\n(5)Square\t\t(6)Square Root\n");
     scanf("%c",&a);
     printf("==============================\n");
 
@@ -46,6 +46,8 @@ int main()
                 scanf("%f",&b); 
                 d = sqrt(b);
                 printf("Your Answer is    :%.2f\n",d);
+                break;
+        default: printf("Invalid"); 
                 break;
     }
 }
